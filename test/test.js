@@ -74,8 +74,7 @@ describe('net-localgroup module', function() {
       // names cannot be terminated by a period and they cannot include commas
       // or any of the following printable characters:
       // ", /, \, [, ], :, |, <, >, +, =, ;, ?, *.  Names also cannot include
-      // characters in the range 1-31, which are nonprintable."
-      // - TODO: URL of some MSDN page with that statement here.
+      // characters in the range 1-31, which are nonprintable." - MSDN
       // See RE_BADCHARS and RE_ENDPERIOD declarations at top of file.
       for (var i = 0; i < refList.length; i++) {
         var gname = refList[i]

@@ -1,13 +1,3 @@
-/*
-TODO:
-* Find out if a group name can have consecutive spaces embedded >>> YES
-* Find out if a group comment can have an embedded newline - at the end?
-  (that can produce a blank line in the NET LOCALGROUP <name> output)
->>> Difficult to determine: windows does not interpret "\n" or "\r";
-    but I haven't given up
-* Try 2 newlines followed by 'Members'
-*/
-
 if (process.platform !== 'win32') {
   console.error('net-localgroup module is only for windows platforms')
   return
@@ -62,7 +52,7 @@ function getGroup(grpName, cb) {
     'Must give local group name as a string')
   assert(typeof cb === 'function', 'Must provide callback')
 
-  grpName = grpName.trim() // TODO: if grpName is a String object, what does trim() give?
+  grpName = grpName.trim()
   assert(grpName, 'Given local group name is empty')
 
   // Guard against injection of change commands, and against illegal chars:
