@@ -4,10 +4,9 @@ The Windows `NET LOCALGROUP` command wrapped in JavaScript
 ## Background
 Windows installs with several local groups predefined by default. Some that
 should be familiar are 'Administrators', 'Users', and 'Guests'.
-[`NET LOCALGROUP`](https://technet.microsoft.com/en-us/library/bb490949.aspx)
-is a sub-command of the
-[`NET` command line tool](https://technet.microsoft.com/en-us/library/bb490948.aspx),
-provided for management of local groups from a command shell.
+[`NET LOCALGROUP`](https://technet.microsoft.com/en-us/library/cc725622.aspx)
+is a sub-command of the `NET` command line tool that is provided for management
+of local groups from a command shell.
 If a local group name is specified, and no change switches are used, it's
 roughly equivalent to using `getent group <groupname>` on Unix/Linux, then
 displaying formatted results.
