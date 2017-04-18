@@ -1,0 +1,35 @@
+{
+  "name": "net-localgroup",
+  "version": "0.0.0",
+  "description": "The Windows NET LOCALGROUP command wrapped in JavaScript",
+  "license": "MIT",
+  "author": {
+    "name": "Matthew Rafferty",
+    "email": "mmraff@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmraff/net-localgroup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmraff/net-localgroup/issues"
+  },
+  "os": [ "win32" ],
+  "devDependencies": {
+    "chai": "^3.4",
+    "mocha": "^2.5"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "windows",
+    "win32",
+    "net",
+    "group",
+    "localgroup",
+    "shell"
+  ],
+  "homepage": "https://github.com/mmraff/net-localgroup#readme"
+}
